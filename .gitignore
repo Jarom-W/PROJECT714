@@ -1,0 +1,6 @@
+.env
+.*.sw[p-z]
+.*.swo
+.*.swn
+*~
+target/

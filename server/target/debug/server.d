@@ -1,1 +1,1 @@
-C:\Users\jarom\Documents\GitHub\PROJECT714\server\target\debug\server.exe: C:\Users\jarom\Documents\GitHub\PROJECT714\server\src\main.rs
+C:\Users\jarom\Documents\GitHub\PROJECT714\server\target\debug\server.exe: C:\Users\jarom\Documents\GitHub\PROJECT714\server\src\handlers.rs C:\Users\jarom\Documents\GitHub\PROJECT714\server\src\main.rs C:\Users\jarom\Documents\GitHub\PROJECT714\server\src\pqc.rs
