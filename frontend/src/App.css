@@ -1,38 +1,142 @@
 .App {
-  text-align: center;
+	background-color:white;
+	overflow-y: auto;
+}
+.header-container {
+	border-style: dotted;
+	border-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main-image {
+	height: 250px;
+	width: 250px;
+	margin-right: 100px;
+}
+.tab-wrapper {
+	display: flex;
+	gap: 10px;
+}
+.tab-btn {
+	background: transparent;
+	border-color: transparent;
+	margin: 3rem;
+	font-size: 25px;
+	border-radius: 8px;
+	padding: 1rem;
+}
+.tab-btn:hover {
+	background: lime;
+	
+}
+.main-content-container {
+	background-color: pink;
+	border-style: dotted;
+	border-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* --- Footer Styles --- */
+.app-footer {
+    background-color: #333; /* Dark background */
+    color: #f4f4f4; /* Light text color */
+    padding: 40px 20px; /* Top/bottom and left/right padding */
+    font-size: 0.9em; /* Slightly smaller font */
+    border-top: 1px solid #444; /* Optional: a subtle top border */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    justify-content: space-around; /* Distributes space between sections */
+    gap: 30px; /* Space between flex items */
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the content */
+    padding-bottom: 20px; /* Space above copyright line */
+    border-bottom: 1px solid #555; /* Separator line */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer-section {
+    flex: 1; /* Allows sections to grow and shrink */
+    min-width: 250px; /* Minimum width before wrapping */
+    max-width: 300px; /* Max width for each section */
 }
 
-.App-link {
-  color: #61dafb;
+.footer-section h3 {
+    color: #fff; /* White heading color */
+    margin-bottom: 15px;
+    font-size: 1.1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-section p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none; /* Remove bullet points from lists */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #f4f4f4; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff; /* Highlight on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between social icons */
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 28px; /* Size of social icons */
+    height: 28px;
+    border-radius: 4px; /* Slightly rounded icons */
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    color: #bbb; /* Lighter color for copyright text */
+    font-size: 0.8em;
+}
+
+/* --- Responsive Adjustments for Footer --- */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically on small screens */
+        align-items: center; /* Center items when stacked */
+        text-align: center; /* Center text within sections */
+    }
+
+    .footer-section {
+        min-width: unset; /* Remove min-width to allow full width */
+        max-width: 90%; /* Adjust max width for better mobile layout */
+        margin-bottom: 20px; /* Add space between stacked sections */
+    }
+
+    .social-icons {
+        justify-content: center; /* Center social icons when stacked */
+    }
+}
+.social-logo {
+	width: 500px;
+	height: 50px;
 }
