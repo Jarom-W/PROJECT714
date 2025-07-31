@@ -1,5 +1,4 @@
 // my-react-app/src/App.jsx
-import { useState, useEffect } from 'react';
 import './App.css'; // Keep your existing CSS
 import logo from "./assets/shrek.jpg";
 import ghlogo from "./assets/ghlogo.png";
