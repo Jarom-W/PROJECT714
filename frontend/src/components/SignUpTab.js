@@ -51,7 +51,7 @@ function SignUpTab() {
     return (
         <div className="tab-content signup-tab">
             <div className="signup-form-container">
-                <h2 className="form-title">Create Your Account</h2>
+                <h2 className="form-title">Sign up for free!</h2>
                 <p className="form-subtitle">Join us to unlock exclusive features.</p>
                 <form onSubmit={handleSubmit} className="signup-form">
                     <div className="form-group">

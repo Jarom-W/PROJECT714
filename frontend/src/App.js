@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import logo from "./assets/shrek.jpg"; // Your main logo
+import logo from "./assets/ERBLong.png"; // Your main logo
 import ghlogo from "./assets/ghlogo.png"; // GitHub logo
 import lilogo from "./assets/lilogo.png"; // LinkedIn logo
 

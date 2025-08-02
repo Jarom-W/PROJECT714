@@ -44,7 +44,37 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 1rem;
-    background-color: var(--dark-navy);
+    background-color: #11131A;
+    /* Starry background layers */
+    background-image:
+        /* Smallest, light blue/white stars */
+        radial-gradient(circle at 15% 50%, #C8E6F0 1px, transparent 1px),
+        radial-gradient(circle at 85% 20%, #C8E6F0 1px, transparent 1px),
+        radial-gradient(circle at 40% 80%, #C8E6F0 1px, transparent 1px),
+        radial-gradient(circle at 70% 60%, #C8E6F0 1px, transparent 1px),
+        radial-gradient(circle at 25% 30%, #C8E6F0 1px, transparent 1px),
+        radial-gradient(circle at 90% 90%, #C8E6F0 1px, transparent 1px),
+        radial-gradient(circle at 5% 75%, #C8E6F0 1px, transparent 1px),
+        radial-gradient(circle at 55% 10%, #C8E6F0 1px, transparent 1px),
+        radial-gradient(circle at 30% 15%, #C8E6F0 1px, transparent 1px),
+        radial-gradient(circle at 75% 45%, #C8E6F0 1px, transparent 1px),
+        /* Slightly larger, orange/brown stars */
+        radial-gradient(circle at 20% 70%, #E79E6F 1.5px, transparent 1.5px),
+        radial-gradient(circle at 80% 30%, #E79E6F 1.5px, transparent 1.5px),
+        radial-gradient(circle at 50% 5%, #E79E6F 1.5px, transparent 1.5px),
+        radial-gradient(circle at 10% 20%, #E79E6F 1.5px, transparent 1.5px),
+        radial-gradient(circle at 60% 80%, #E79E6F 1.5px, transparent 1.5px),
+        /* Base dark navy blue */
+        linear-gradient(to bottom, #11131A, #11132A);
+    background-size:
+        200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px,
+        300px 300px, 300px 300px, 300px 300px, 300px 300px, 300px 300px,
+        cover; /* Base gradient covers the entire area */
+    background-repeat: no-repeat; /* Prevent stars from repeating within their background-size area */
+    background-position:
+        15% 50%, 85% 20%, 40% 80%, 70% 60%, 25% 30%, 90% 90%, 5% 75%, 55% 10%, 30% 15%, 75% 45%,
+        20% 70%, 80% 30%, 50% 5%, 10% 20%, 60% 80%,
+        0 0; /* Base gradient starts at top-left */
     color: var(--text-light);
     box-shadow: var(--box-shadow-lg);
     position: sticky;
@@ -234,7 +264,7 @@ body {
     width: 100%;
     max-width: 500px; /* Control image size */
     height: 300px; /* Fixed height for consistency */
-    background-image: url('./assets/shrek.jpg'); /* Corrected path */
+    background-image: url('./assets/DF.png'); /* Corrected path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
